@@ -61,7 +61,7 @@ def main():
     chrome_options.add_argument("--headless")
 
     # set up selemium webdriver browser
-    driver = webdriver.Chrome("./chromedriver", chrome_options=chrome_options)
+    driver = webdriver.Chrome("./webdriver/chromedriver", chrome_options=chrome_options)
     driver.get(url)
 
     # use Bs4 to extract the calendar from page source
